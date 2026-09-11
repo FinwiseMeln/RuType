@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="230" viewBox="0 0 1200 230"
+     role="img" aria-labelledby="t d">
+  <title id="t">Горячие клавиши RuType</title>
+  <desc id="d">Pause откатывает последнюю правку и возвращает её обратно, а если правки не было — переключает раскладку слова. Scroll Lock открывает у курсора окно слова: не трогать это слово, всегда менять на другое, своё правило.</desc>
+
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182B4E"/>
+      <stop offset="1" stop-color="#12213E"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22375F"/>
+      <stop offset="1" stop-color="#17284A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="230" rx="24" fill="url(#panel)"/>
+  <rect x="0.5" y="0.5" width="1199" height="229" rx="24" fill="none" stroke="#2B4066" stroke-width="1"/>
+
+  <!-- Pause card -->
+  <g id="pause">
+    <rect x="64" y="45" width="520" height="140" rx="16" fill="#0D1A31" stroke="#263B63"/>
+    <g transform="translate(100 67)">
+      <rect y="8" width="104" height="92" rx="12" fill="#0A1428"/>
+      <rect width="104" height="92" rx="12" fill="url(#cap)" stroke="#31476F"/>
+      <text x="52" y="56" text-anchor="middle"
+            font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+            font-size="24" font-weight="700" fill="#FFFFFF">Pause</text>
+    </g>
+    <text x="232" y="98" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="22" font-weight="600" fill="#FFFFFF">Откат правки и раскладка</text>
+    <text x="232" y="128" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">возвращает последнюю правку обратно,</text>
+    <text x="232" y="152" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">а если её не было — меняет раскладку</text>
+    <text x="232" y="176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">слова, хоть с одного символа</text>
+  </g>
+
+  <!-- Scroll Lock card -->
+  <g id="scroll-lock">
+    <rect x="616" y="45" width="520" height="140" rx="16" fill="#0D1A31" stroke="#263B63"/>
+    <g transform="translate(652 67)">
+      <rect y="8" width="104" height="92" rx="12" fill="#0A1428"/>
+      <rect width="104" height="92" rx="12" fill="url(#cap)" stroke="#31476F"/>
+      <text x="52" y="46" text-anchor="middle"
+            font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+            font-size="16" font-weight="700" fill="#FFFFFF">Scroll</text>
+      <text x="52" y="72" text-anchor="middle"
+            font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+            font-size="16" font-weight="700" fill="#FFFFFF">Lock</text>
+    </g>
+    <text x="788" y="98" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="22" font-weight="600" fill="#FFFFFF">Окно слова</text>
+    <text x="788" y="128" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">всплывает у курсора и не крадёт фокус:</text>
+    <text x="788" y="152" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">не трогать · всегда менять на… ·</text>
+    <text x="788" y="176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="17" fill="#8CA0C2">своё правило замены</text>
+  </g>
+</svg>

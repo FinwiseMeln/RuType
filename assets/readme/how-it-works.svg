@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="430" viewBox="0 0 1200 430"
+     role="img" aria-labelledby="t d">
+  <title id="t">RuType: путь нажатия клавиши</title>
+  <desc id="d">Схема работы: нажатие клавиши проходит через низкоуровневый хук и буфер слова в анализатор, который проверяет слово по словарям — Hunspell, триграммной модели и частотному списку — и при необходимости заменяет текст. Первое сработавшее правило выигрывает: стоп-слово, правило замены, мой словарь, раскладка, опечатка.</desc>
+
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182B4E"/>
+      <stop offset="1" stop-color="#12213E"/>
+    </linearGradient>
+    <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#4CC2FF"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="430" rx="24" fill="url(#panel)"/>
+  <rect x="0.5" y="0.5" width="1199" height="429" rx="24" fill="none" stroke="#2B4066" stroke-width="1"/>
+
+  <!-- ============ pipeline row ============ -->
+  <g id="pipeline" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+     font-size="20" fill="#DCE5F4">
+    <rect x="64" y="70" width="150" height="64" rx="12" fill="#0D1A31" stroke="#263B63"/>
+    <text x="139" y="108" text-anchor="middle">Клавиатура</text>
+
+    <line x1="224" y1="102" x2="262" y2="102" stroke="#4CC2FF" stroke-width="2.5" marker-end="url(#ah)"/>
+
+    <rect x="276" y="70" width="188" height="64" rx="12" fill="#0D1A31" stroke="#263B63"/>
+    <text x="370" y="108" text-anchor="middle">Хук клавиатуры</text>
+
+    <line x1="474" y1="102" x2="512" y2="102" stroke="#4CC2FF" stroke-width="2.5" marker-end="url(#ah)"/>
+
+    <rect x="526" y="70" width="158" height="64" rx="12" fill="#0D1A31" stroke="#263B63"/>
+    <text x="605" y="108" text-anchor="middle">Буфер слова</text>
+
+    <line x1="694" y1="102" x2="732" y2="102" stroke="#4CC2FF" stroke-width="2.5" marker-end="url(#ah)"/>
+
+    <rect x="746" y="70" width="148" height="64" rx="12" fill="#0D1A31" stroke="#4CC2FF"/>
+    <text x="820" y="108" text-anchor="middle" font-weight="600">Анализатор</text>
+
+    <line x1="904" y1="102" x2="942" y2="102" stroke="#4CC2FF" stroke-width="2.5" marker-end="url(#ah)"/>
+
+    <rect x="956" y="70" width="178" height="64" rx="12" fill="#0D1A31" stroke="#263B63"/>
+    <text x="1045" y="108" text-anchor="middle">Замена текста</text>
+  </g>
+
+  <!-- elbow connectors from analyzer down to oracle cards -->
+  <g id="connectors" stroke="#31476F" stroke-width="1.5" fill="none">
+    <path d="M820 134 L820 168 L214 168 L214 206"/>
+    <path d="M820 168 L600 168 L600 206"/>
+    <path d="M820 168 L986 168 L986 206"/>
+  </g>
+  <circle cx="820" cy="134" r="4" fill="#4CC2FF"/>
+
+  <!-- ============ oracle cards ============ -->
+  <g id="oracles" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+    <rect x="64" y="206" width="300" height="110" rx="14" fill="#0D1A31" stroke="#263B63"/>
+    <text x="96" y="248" font-size="22" font-weight="600" fill="#FFFFFF">Hunspell</text>
+    <text x="96" y="280" font-size="19" fill="#8CA0C2">морфология: существует</text>
+    <text x="96" y="304" font-size="19" fill="#8CA0C2">ли слово?</text>
+
+    <rect x="450" y="206" width="300" height="110" rx="14" fill="#0D1A31" stroke="#263B63"/>
+    <text x="482" y="248" font-size="22" font-weight="600" fill="#FFFFFF">Триграммная модель</text>
+    <text x="482" y="280" font-size="19" fill="#8CA0C2">естественность сочетаний</text>
+    <text x="482" y="304" font-size="19" fill="#8CA0C2">букв русского языка</text>
+
+    <rect x="836" y="206" width="300" height="110" rx="14" fill="#0D1A31" stroke="#263B63"/>
+    <text x="868" y="248" font-size="22" font-weight="600" fill="#FFFFFF">Частотный список</text>
+    <text x="868" y="280" font-size="19" fill="#8CA0C2">ранжирование кандидатов,</text>
+    <text x="868" y="304" font-size="19" fill="#8CA0C2">300 тыс. словоформ</text>
+  </g>
+
+  <!-- ============ decision chain ============ -->
+  <g id="decision">
+    <text x="600" y="356" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="15" letter-spacing="2" fill="#67799C">ПЕРВОЕ СРАБОТАВШЕЕ ПРАВИЛО ВЫИГРЫВАЕТ</text>
+    <text x="600" y="392" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="20" fill="#AFC0DD">стоп-слово <tspan fill="#4CC2FF">→</tspan> правило <tspan fill="#4CC2FF">→</tspan> мой словарь <tspan fill="#4CC2FF">→</tspan> раскладка <tspan fill="#4CC2FF">→</tspan> опечатка</text>
+  </g>
+</svg>

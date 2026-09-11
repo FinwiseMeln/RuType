@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="110" viewBox="0 0 1200 110"
+     role="img" aria-labelledby="t d">
+  <title id="t">Как пользоваться — раздел README RuType</title>
+  <desc id="d">Управление горячими клавишами и окном слова</desc>
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182B4E"/>
+      <stop offset="1" stop-color="#12213E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="110" rx="18" fill="url(#p)"/>
+  <rect x="0.5" y="0.5" width="1199" height="109" rx="18" fill="none" stroke="#2B4066" stroke-width="1"/>
+  <text x="64" y="71" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="36" font-weight="700" fill="#4CC2FF">04</text>
+  <line x1="130" y1="34" x2="130" y2="76" stroke="#2B4066" stroke-width="1"/>
+  <text x="156" y="70" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="44" font-weight="700" fill="#FFFFFF">Как пользоваться</text>
+  <text x="1136" y="66" text-anchor="end"
+        font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="20" fill="#8CA0C2">Pause — откат · Scroll Lock — окно слова</text>
+  <g transform="translate(1180 55)" stroke="#4CC2FF" stroke-width="2.5" fill="#4CC2FF" stroke-linecap="round" opacity="0.9">
+    <line x1="-32" y1="-5" x2="-6" y2="-5"/>
+    <path d="M-6 -5 L-14 -10 L-14 0 Z" stroke="none"/>
+    <line x1="-6" y1="5" x2="-32" y2="5"/>
+    <path d="M-32 5 L-24 0 L-24 10 Z" stroke="none"/>
+  </g>
+</svg>

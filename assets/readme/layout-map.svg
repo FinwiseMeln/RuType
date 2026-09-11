@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="330" viewBox="0 0 1200 330"
+     role="img" aria-labelledby="t d">
+  <title id="t">Как раскладка переводится клавиша за клавишей</title>
+  <desc id="d">Схема клавиш: нажатия g-h-b-d-t-n в английской раскладке соответствуют буквам п-р-и-в-е-т в русской, поэтому ghbdtn превращается в привет. Буквы на клавишах знаков тоже переводятся: ghjljk;bnm? превращается в продолжить.</desc>
+
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182B4E"/>
+      <stop offset="1" stop-color="#12213E"/>
+    </linearGradient>
+    <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#4CC2FF"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="330" rx="24" fill="url(#panel)"/>
+  <rect x="0.5" y="0.5" width="1199" height="329" rx="24" fill="none" stroke="#2B4066" stroke-width="1"/>
+
+  <text x="64" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="15" letter-spacing="2" fill="#67799C">КЛАВИША ЗА КЛАВИШЕЙ, ЧЕРЕЗ РЕАЛЬНУЮ РАСКЛАДКУ WINDOWS</text>
+
+  <!-- row 1: ghbdtn -> привет -->
+  <g id="row1">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+      <g transform="translate(64 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">g</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">п</text>
+      </g>
+      <g transform="translate(134 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">h</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">р</text>
+      </g>
+      <g transform="translate(204 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">b</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">и</text>
+      </g>
+      <g transform="translate(274 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">d</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">в</text>
+      </g>
+      <g transform="translate(344 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">t</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">е</text>
+      </g>
+      <g transform="translate(414 80)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">n</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">т</text>
+      </g>
+    </g>
+    <line x1="500" y1="117" x2="552" y2="117" stroke="#4CC2FF" stroke-width="3" marker-end="url(#ah)"/>
+    <text x="576" y="130" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="36" font-weight="600" fill="#4CC2FF">привет</text>
+  </g>
+
+  <!-- row 2: ghjljk;bnm? -> продолжить, -->
+  <g id="row2">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+      <g transform="translate(64 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">g</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">п</text>
+      </g>
+      <g transform="translate(134 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">h</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">р</text>
+      </g>
+      <g transform="translate(204 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">j</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">о</text>
+      </g>
+      <g transform="translate(274 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">l</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">д</text>
+      </g>
+      <g transform="translate(344 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">j</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">о</text>
+      </g>
+      <g transform="translate(414 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">k</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">л</text>
+      </g>
+      <g transform="translate(484 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#4CC2FF"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">;</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">ж</text>
+      </g>
+      <g transform="translate(554 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">b</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">и</text>
+      </g>
+      <g transform="translate(624 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">n</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">т</text>
+      </g>
+      <g transform="translate(694 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#31476F"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">m</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">ь</text>
+      </g>
+      <g transform="translate(764 196)">
+        <rect width="66" height="74" rx="10" fill="#1A2C50" stroke="#4CC2FF"/>
+        <rect y="70" width="66" height="4" rx="2" fill="#0A1428"/>
+        <text x="33" y="34" font-size="26" fill="#FFFFFF">?</text>
+        <text x="33" y="62" font-size="26" font-weight="700" fill="#4CC2FF">,</text>
+      </g>
+    </g>
+    <line x1="850" y1="233" x2="902" y2="233" stroke="#4CC2FF" stroke-width="3" marker-end="url(#ah)"/>
+    <text x="926" y="246" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="36" font-weight="600" fill="#4CC2FF">продолжить,</text>
+  </g>
+
+  <text x="64" y="310" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="19" fill="#8CA0C2">Знакам-буквам (ж, б, ю, х, ъ, э) соответствуют свои клавиши — они подсвечены рамкой.</text>
+</svg>
